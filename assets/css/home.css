@@ -1,0 +1,62 @@
+/* ========= HERO ========== */
+.hero-section { 
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 40px;
+  min-height: 100vh;
+  background: url('../images/gradientone.png') no-repeat center center/cover;
+}
+
+.hero-section h1 { 
+  width: 90%;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+}
+
+/* ========= GENERAL RESPONSIVENESS ========== */
+@media (max-width: 1200px) {
+
+  .hero-image img {
+          max-width: 95%;
+          height: auto;
+      }
+}
+  
+@media (max-width: 768px) {
+
+  .hero-section {
+      min-height: 90vh;
+      gap: 20px;
+  }
+
+  .hero-content {
+      gap: 30px;
+      line-height: 120%;
+  }
+
+  .hero-image img {
+      width: 350px;
+      max-width: 80%;
+      height: auto;
+  }
+}
+
+@media (max-width: 389px) {
+  .hero-section {
+      gap: 15px;
+  }
+}
